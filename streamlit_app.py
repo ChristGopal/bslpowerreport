@@ -5,8 +5,6 @@ df = pd.read_csv('Entegris_PowerCons.csv')
 timestamp_column_name = ' Timestamp'
 df['Timestamp'] = pd.to_datetime(df[timestamp_column_name])
 
-column_names = df.columns.tolist()
-st.write(column_names)
 
 col1, col2 = st.columns(2)
 
