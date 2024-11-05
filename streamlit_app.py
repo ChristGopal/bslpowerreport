@@ -21,6 +21,8 @@ with col2:
         ["D", "W","M","Y",],
         index=None,
     )
+cons1 = df[Meter_Selection].resample(Period_Selection).sum()
+
 st.write("You selected:", Meter_Selection, Period_Selection )
 st.write("Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)")
 
