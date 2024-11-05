@@ -22,6 +22,7 @@ with col2:
         index=1,
     )
 cons1 = df[Meter_Selection].resample(Period_Selection).sum()
+df.head()
 st.table(cons1)
 st.line_chart(cons1)
 st.write("You selected:", Meter_Selection, Period_Selection )
