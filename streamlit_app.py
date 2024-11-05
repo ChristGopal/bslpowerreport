@@ -8,8 +8,8 @@ df.set_index('Timestamp', inplace=True)
 
 column_names = df.columns.tolist()
 for i, column_name in enumerate(column_names):
-    st.write(f"Index: {i}, Column Name: {column_name}")
-    st.write(f"Index: {i}")
+    st.write(f"{column_name}")
+   
 
 col1, col2 = st.columns(2)
 
