@@ -12,14 +12,14 @@ with col1:
         "Select Your Meter Asset",
         [column_names[1],column_names[2],column_names[3],
          column_names[4],column_names[5],column_names[6]],
-        index=1,
+        index=None,
     )
   
 with col2:
     Period_Selection = st.radio(
         "Select Your Meter Period",
         ["D", "W","M","Y",],
-        index=1,
+        index=None,
     )
 cons1 = df[Meter_Selection].resample(Period_Selection).sum()
 df.head()
