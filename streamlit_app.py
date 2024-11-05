@@ -3,7 +3,7 @@ import pandas as pd
 st.title("🎈 BSL Power Report apps")
 genre = st.radio(
     "Select Your Meter Asset",
-    ["D-Meter1", "***Drama***", "Documentary :movie_camera:"],
+    ["DENT_MTR1", "DENT_MTR2","DENT_MTR3","MDP01","MDP02","MDP03",],
     index=None,
 )
 
