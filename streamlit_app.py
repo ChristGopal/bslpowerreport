@@ -5,15 +5,15 @@ st.title("🎈 BSL Power Report apps")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.checkbox("Disable radio widget", key="disabled")
-    st.checkbox("Orient radio options horizontally", key="horizontal")
+    st.checkbox("DENT_MTR1")
+    st.checkbox("DENT_MTR2")
+    st.checkbox("DENT_MTR3")
+    st.checkbox("MDP01")
+    st.checkbox("MDP02")
+    st.checkbox("MDP03")
+    
 
 with col2:
-    Meter_Selection = st.radio(
-        "Select Your Meter Asset",
-        ["DENT_MTR1", "DENT_MTR2","DENT_MTR3","MDP01","MDP02","MDP03",],
-        index=None,
-    )
     Period_Selection = st.radio(
         "Select Your Meter Asset",
         ["D", "W","M","Y",],
