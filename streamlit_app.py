@@ -10,8 +10,6 @@ period_sel = st.radio(
     ["D", "W","M","Y",],
     index=None,
 )
-df = pd.read_csv('Entegris_PowerCons.csv')
-df[' Timestamp'] = pd.to_datetime(df[' Timestamp'])
-df = df.set_index(' Timestamp')
+st.write("You selected:", genre)
 
 
