@@ -7,7 +7,8 @@ df['Timestamp'] = pd.to_datetime(df[timestamp_column_name])
 df.set_index('Timestamp', inplace=True)
 
 column_names = df.columns.tolist()
-st.write(column_names)
+for i, column_name in enumerate(column_names):
+    st.write(f"Index: {i}, Column Name: {column_name}")
 
 col1, col2 = st.columns(2)
 
