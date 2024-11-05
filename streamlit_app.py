@@ -13,8 +13,5 @@ period_sel = st.radio(
 df = pd.read_csv('Entegris_PowerCons.csv')
 df[' Timestamp'] = pd.to_datetime(df[' Timestamp'])
 df = df.set_index(' Timestamp')
-weekly_sum = df[['DENT_MTR1','DENT_MTR2','DENT_MTR3','MDP01', 'MDP02', 'MDP03']].resample(period_sel).sum()
-consumption_1 = DENT_MTR_DC.reset_index()  # Reset index
-fig = px.bar (consumption_1, x='Timestamp', y=DENT_MTR_DC)
-fig.show()
+
 
