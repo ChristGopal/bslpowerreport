@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 st.title("Power Report apps")
 df = pd.read_csv('Entegris_PowerCons.csv')
-df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+timestamp_column_name = ' Timestamp'
+df['Timestamp'] = pd.to_datetime(df[timestamp_column_name])
 
 column_names = df.columns.tolist()
 st.write(column_names)
