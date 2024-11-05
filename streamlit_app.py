@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-st.title("🎈 BSL Power Report apps")
+st.title("🎈 Anitha Power Report apps")
 
 col1, col2 = st.columns(2)
 
