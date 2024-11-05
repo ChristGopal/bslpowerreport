@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 st.title("🎈 BSL Power Report apps")
+
+with col1:
+    st.checkbox("Disable radio widget", key="disabled")
+    st.checkbox("Orient radio options horizontally", key="horizontal")
 Meter_Selection = st.radio(
     "Select Your Meter Asset",
     ["DENT_MTR1", "DENT_MTR2","DENT_MTR3","MDP01","MDP02","MDP03",],
