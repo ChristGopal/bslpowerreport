@@ -14,11 +14,6 @@ with col1:
     st.checkbox(column_names[2])
     st.checkbox(column_names[3])
     st.checkbox(column_names[4])
-    st.checkbox("DENT_MTR2")
-    st.checkbox("DENT_MTR3")
-    st.checkbox("MDP01")
-    st.checkbox("MDP02")
-    st.checkbox("MDP03")
   
 with col2:
     Period_Selection = st.radio(
