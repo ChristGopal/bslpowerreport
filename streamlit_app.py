@@ -5,16 +5,15 @@ df = pd.read_csv('Entegris_PowerCons.csv')
 timestamp_column_name = ' Timestamp'
 df['Timestamp'] = pd.to_datetime(df[timestamp_column_name])
 df.set_index('Timestamp', inplace=True)
-
 column_names = df.columns.tolist()
-for i, column_name in enumerate(column_names):
-    st.write(f"{column_name}")
-   
-
+ 
 col1, col2 = st.columns(2)
 
 with col1:
-    st.checkbox("DENT_MTR1")
+    st.checkbox(column_names[1])
+    st.checkbox(column_names[2])
+    st.checkbox(column_names[3])
+    st.checkbox(column_names[4])
     st.checkbox("DENT_MTR2")
     st.checkbox("DENT_MTR3")
     st.checkbox("MDP01")
