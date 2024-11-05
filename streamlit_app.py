@@ -11,8 +11,7 @@ with col1:
     st.checkbox("MDP01")
     st.checkbox("MDP02")
     st.checkbox("MDP03")
-    
-
+  
 with col2:
     Period_Selection = st.radio(
         "Select Your Meter Asset",
