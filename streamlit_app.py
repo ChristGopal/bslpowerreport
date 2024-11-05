@@ -14,6 +14,8 @@ with col1:
     st.checkbox(column_names[2])
     st.checkbox(column_names[3])
     st.checkbox(column_names[4])
+    st.checkbox(column_names[5])
+    st.checkbox(column_names[6])
   
 with col2:
     Period_Selection = st.radio(
