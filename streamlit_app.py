@@ -23,7 +23,7 @@ with col2:
     )
 cons1 = df[Meter_Selection].resample(Period_Selection).sum()
 cons1 = cons1.reset_index() 
-st.line_chart( x=cons1, y=Timestamp)
+st.line_chart(cons1)
 st.write("You selected:", Meter_Selection, Period_Selection )
 st.write("Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)")
 
