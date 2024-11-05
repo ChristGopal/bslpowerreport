@@ -3,6 +3,7 @@ import pandas as pd
 st.title("Power Report apps")
 df = pd.read_csv('Entegris_PowerCons.csv')
 df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+
 column_names = df.columns.tolist()
 st.write(column_names)
 
