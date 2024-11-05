@@ -10,16 +10,15 @@ column_names = df.columns.tolist()
 col1, col2 = st.columns(2)
 
 with col1:
-    st.checkbox(column_names[1])
-    st.checkbox(column_names[2])
-    st.checkbox(column_names[3])
-    st.checkbox(column_names[4])
-    st.checkbox(column_names[5])
-    st.checkbox(column_names[6])
+   Meter_Selection = st.radio(
+        "Select Your Meter Asset",
+        [column_names[1],column_names[2],column_names[3],column_names[4]],
+        index=None,
+    )
   
 with col2:
     Period_Selection = st.radio(
-        "Select Your Meter Asset",
+        "Select Your Meter Period",
         ["D", "W","M","Y",],
         index=None,
     )
