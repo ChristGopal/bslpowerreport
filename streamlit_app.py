@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-st.title("🎈 Anitha Power Report apps")
+st.title("Power Report apps")
 df = pd.read_csv('Entegris_PowerCons.csv')
 df['Timestamp'] = pd.to_datetime(df['Timestamp'])
 column_names = df.columns.tolist()
