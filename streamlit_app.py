@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 st.title("🎈 BSL Power Report apps")
 genre = st.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+    "Select Your Meter Asset",
+    ["D-Meter1", "***Drama***", "Documentary :movie_camera:"],
     index=None,
 )
 
