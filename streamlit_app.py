@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 st.title("Power Consumption Reports")
+st.image("substation.gif", caption="Power Consumption Reports")
 df = pd.read_csv('Entegris_PowerCons.csv')
 timestamp_column_name = ' Timestamp'
 df['Timestamp'] = pd.to_datetime(df[timestamp_column_name])
