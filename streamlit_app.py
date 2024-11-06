@@ -18,7 +18,7 @@ with st.sidebar:
         index=1,
     )
   
-with col2:
+with st.sidebar:
     Period_Selection = st.radio(
         "Select Your Meter Period",
         ["D", "W","MS","Q","Y",],
