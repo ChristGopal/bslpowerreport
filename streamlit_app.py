@@ -18,21 +18,14 @@ with st.sidebar:
          column_names[4],column_names[5],column_names[6]],
         index=1,
     )
-  
+ 
 with st.sidebar:
     Period_Selection = st.radio(
         "Select Your Meter Period",
         ["D", "W","MS","Q","Y",],
         index=1,
     )
-
-
 cons1 = df[Meter_Selection].resample(Period_Selection).agg(['sum', 'min', 'max'])
-max_consumption = cons1.max() 
-max_consumption_date = cons1[cons1 == max_consumption].index[0]  
-min_consumption = cons1.min() 
-min_consumption_date = cons1[cons1 == min_consumption].index[0]  
-st.metric(label="Max Of The", value=max_consumption, delta=max_consumption_date)
 st.bar_chart(cons1)
 st.table(cons1)
 
