@@ -31,6 +31,6 @@ cons1 = df[Meter_Selection].resample(Period_Selection).agg(['sum', 'min', 'max']
 st.bar_chart(cons1)
 st.table(cons1)
 
-st.write("You selected:", Meter_Selection, Period_Selection )
+
 st.write("Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)")
 
