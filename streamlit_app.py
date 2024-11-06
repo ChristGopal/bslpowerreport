@@ -8,11 +8,6 @@ df['Timestamp'] = pd.to_datetime(df[timestamp_column_name])
 df.set_index('Timestamp', inplace=True)
 column_names = df.columns.tolist()
 col1, col2 = st.columns(2)
-# Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
-)
 
 # Using "with" notation
 with st.sidebar:
