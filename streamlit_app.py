@@ -17,13 +17,6 @@ with st.sidebar:
          column_names[4],column_names[5],column_names[6]],
         index=1,
     )
-with col1:
-   Meter_Selection = st.radio(
-        "Select Your Meter Asset",
-        [column_names[1],column_names[2],column_names[3],
-         column_names[4],column_names[5],column_names[6]],
-        index=1,
-    )
   
 with col2:
     Period_Selection = st.radio(
