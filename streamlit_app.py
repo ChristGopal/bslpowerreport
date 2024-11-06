@@ -21,7 +21,7 @@ with col2:
         ["D", "W","M","Q","Y",],
         index=1,
     )
-cons1 = df[Meter_Selection].resample(Period_Selection).agg(['sum'])
+cons1 = df[Meter_Selection].resample(Period_Selection).agg(['sum', 'min', 'max'])
 st.bar_chart(cons1)
 st.table(cons1)
 
