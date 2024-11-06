@@ -18,7 +18,7 @@ with col1:
 with col2:
     Period_Selection = st.radio(
         "Select Your Meter Period",
-        [Daily="D", "W","M","Q","Y",],
+        ["D", "W","M","Q","Y",],
         index=1,
     )
 cons1 = df[Meter_Selection].resample(Period_Selection).agg(['sum', 'min', 'max'])
