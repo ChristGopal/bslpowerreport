@@ -24,7 +24,7 @@ with col2:
 
 Meter_Selection = ['Area_MTR1', 'Area_MTR2', 'Area_MTR3']
 cons1 = df[Meter_Selection].resample(Period_Selection).agg(['sum', 'min', 'max'])
-st.bar_chart(cons1)
+# st.bar_chart(cons1)
 st.table(cons1)
 
 st.write("You selected:", Meter_Selection, Period_Selection )
