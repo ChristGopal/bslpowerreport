@@ -11,9 +11,11 @@ col1, col2 = st.columns(2)
 
 # Using "with" notation
 with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
+   Meter_Selection = st.radio(
+        "Select Your Meter Asset",
+        [column_names[1],column_names[2],column_names[3],
+         column_names[4],column_names[5],column_names[6]],
+        index=1,
     )
 with col1:
    Meter_Selection = st.radio(
