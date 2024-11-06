@@ -8,6 +8,8 @@ df['Timestamp'] = pd.to_datetime(df[timestamp_column_name])
 df.set_index('Timestamp', inplace=True)
 column_names = df.columns.tolist()
 col1, col2 = st.columns(2)
+with st.sidebar:
+    st.[element_name]
 with col1:
    Meter_Selection = st.radio(
         "Select Your Meter Asset",
