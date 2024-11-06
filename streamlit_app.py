@@ -11,7 +11,7 @@ col1, col2 = st.columns(2)
 
 # Using "with" notation
 with st.sidebar:
-   st.logo("substation.gif")
+   st.logo("logo123.png")
    Meter_Selection = st.radio(
         "Select Your Meter Asset",
         [column_names[1],column_names[2],column_names[3],
