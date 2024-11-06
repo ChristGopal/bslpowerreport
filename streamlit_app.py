@@ -16,14 +16,14 @@ with st.sidebar:
         "Select Your Meter Asset",
         [column_names[1],column_names[2],column_names[3],
          column_names[4],column_names[5],column_names[6]],
-        index=1,
+        index=0,
     )
  
 with st.sidebar:
     Period_Selection = st.radio(
         "Select Your Meter Period",
         ["D", "W","MS","Q","Y",],
-        index=1,
+        index=0,
     )
 cons1 = df[Meter_Selection].resample(Period_Selection).agg(['sum', 'min', 'max'])
 st.bar_chart(cons1)
